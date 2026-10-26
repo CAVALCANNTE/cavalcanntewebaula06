@@ -1,0 +1,92 @@
+:root {
+  --bg-color: #f7f7f9;
+  --text-color: #333333;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+#space-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #050510;
+  overflow: hidden;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: crosshair;
+  user-select: none;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px);
+  background-size: 100px 100px;
+  opacity: 0.5;
+}
+
+#enterprise-ship {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  color: #00d2ff;
+  font-family: monospace;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  pointer-events: none;
+  text-shadow: 0 0 5px #00d2ff;
+  transition: top 0.1s ease;
+}
+
+.instructions {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: #888;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.placar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #9fd8ff;
+  font-family: monospace;
+  pointer-events: none;
+}
+
+#inimigo {
+  position: absolute;
+  right: 60px;
+  top: 150px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.laser {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #ff0055;
+  box-shadow: 0 0 8px #ff0055, 0 0 15px #ff0055;
+  border-radius: 50%;
+  pointer-events: none;
+  transform-origin: left center;
+}

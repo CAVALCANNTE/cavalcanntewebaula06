@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Simulador USS Enterprise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Painel de Controle - USS Enterprise</h1>
+    </header>
+
+    <section>
+      <div id="space-container">
+          <div class="stars"></div>
+
+          <div class="placar">
+              Disparos: <span id="disparos">0</span> |
+              Abates: <span id="abates">0</span> |
+              Recorde: <span id="recorde">0</span>
+          </div>
+
+          <div id="inimigo">☄️</div>
+
+          <pre id="enterprise-ship">
+             ___________________          _-_
+             \==============_=_/ ____.---'---`---.___
+                         \_ \    \----._________.----/
+                           \ \   /  /    `-_-
+                       __,--`.`-'..'-_
+                      /____          ||
+                           `--.____,-'
+          </pre>
+
+          <div class="instructions">
+              Clique em qualquer lugar no espaço para disparar os lasers da Enterprise!
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
